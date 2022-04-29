@@ -348,7 +348,7 @@ function isElementInViewport(el) {
                for(var i in bag){
                 total += bag[i];    //calculate sum of all numbers in the array 
                }
-               var last = "$ " + total.toFixed(2);
+               var last = "# " + total.toFixed(2);
                $('.pay-last').text(last);
                return last;   // return total only -> bug.
                
@@ -367,8 +367,8 @@ function isElementInViewport(el) {
              $('.checkout').addClass('disabled');
              $('#bin').addClass('disabled');
              bag = [];
-             $('.total-amount').add('.pay-last').text("$ " + bag.length);
-             cart.find('#count-item').text(0 + ' item').data('count', 0);
+             $('.total-amount').add('.pay-last').text("# " + bag.length);
+             cart.find('#count-item').text(00 + ' item').data('count', 0);
            });
             
           });
